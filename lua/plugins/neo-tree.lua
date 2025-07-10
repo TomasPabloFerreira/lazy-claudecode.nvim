@@ -8,11 +8,21 @@ return {
   },
   lazy = false,
   opts = {
-    -- tus opciones personalizadas si querés
+    window = {
+      width = 30,
+      position = "left",
+    },
+    default_component_configs = {
+      indent = {
+        indent_size = 2,
+        padding = 1,
+      },
+    },
   },
   config = function()
     require("neo-tree").setup()
 
     vim.keymap.set("n", "<leader>t", "<cmd>Neotree toggle<cr>", { desc = "Toggle Neo-tree" })
+    vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<cr>", { desc = "Toggle Neo-tree" })
   end,
 }
