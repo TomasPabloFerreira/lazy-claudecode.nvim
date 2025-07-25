@@ -16,8 +16,8 @@ vim.g.mapleader = " "
 
 -- Relative line number
 vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.numberwidth = 2
+vim.opt.relativenumber = false
+vim.opt.numberwidth = 1
 
 -- Search settings
 vim.opt.hlsearch = true      -- Highlight search results
